@@ -1,10 +1,5 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var port = '3000';
-
-var app = express();
-
-app.listen(port);
+var app = require('./config/app_config');
+var db = require('./config/db_config');
 
 app.get('/', function(req, res) {
 	var pessoa = {

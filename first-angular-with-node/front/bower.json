@@ -1,0 +1,16 @@
+{
+  "name": "front",
+  "description": "implementação em angular da api",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "authors": [
+    "RodrigoSchmitz <rodrigoschmitz94@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

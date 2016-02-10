@@ -1,0 +1,31 @@
+{
+  "name": "auth-api-restful",
+  "version": "1.0.0",
+  "description": "Authenticator api em node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoSchmitz/learning-node/auth-api-restful"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "restful"
+  ],
+  "author": "Rodrigo Schmitz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodrigoSchmitz/learning-node/auth-api-restful/issues"
+  },
+  "homepage": "https://github.com/RodrigoSchmitz/learning-node/auth-api-restful#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "jsonwebtoken": "^5.5.4",
+    "mongoose": "^4.4.2"
+  }
+}

@@ -11,6 +11,7 @@
   "license": "MIT",
   "homepage": "",
   "dependencies": {
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.0"
   }
 }

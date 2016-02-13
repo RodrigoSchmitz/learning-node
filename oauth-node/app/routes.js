@@ -28,22 +28,26 @@ module.exports = function(app, passport){
 		res.render('profile.ejs', { user: req.user});
 	});
 
-	app.get('/:username/:password', function(req, res){
-		var newUser = new User();
-		newUser.local.username = req.params.username;
-		newUser.local.password = req.params.password;
-		console.log(newUser.local.username + " " + newUser.local.password);
-		newUser.save(function(err){
-			if (err) {
-				throw err;
-			}
-		});
-		res.send('Sucess!');
-	});
+app.get('/auth/facebook', passport.authenticate('facebook', {scope: ['email']}));
+
+app.get('/auth/facebook/callback',
+  passport.authenticate('facebook', { successRedirect: '/profile',
+                                      failureRedirect: '/' }));
 
 	app.get('/logout', function(req, res){
 		req.logout();
-		res.redirect('/')
+		res.redirect('/');
+	});
+
+app.get('/auth/google', passport.authenticate('google', {scope: ['profile', 'email']}));
+
+app.get('/auth/google/callback',
+  passport.authenticate('google', { successRedirect: '/profile',
+                                      failureRedirect: '/' }));
+
+	app.get('/logout', function(req, res){
+		req.logout();
+		res.redirect('/');
 	});
 };
 

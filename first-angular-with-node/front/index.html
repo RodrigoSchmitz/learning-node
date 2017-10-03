@@ -2,6 +2,7 @@
 <html lang="pt-br" ng-app='myapp'>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Consumo da API</title>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -31,7 +32,7 @@
 				<button type="button" class="btn btn-default" ng-click='login(usuario)'>Acessar</button>
 				<button type="button" class="btn btn-danger"ng-click='logout()'>logout</button>
 			</div>
-		</form>	
+		</form>
 		<hr>
 		<div ng-controller='produtoController'>
 			<button type="button" class="btn btn-default" ng-click='listar()'>Atualizar Produtos</button>
